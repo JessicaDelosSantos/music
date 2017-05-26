@@ -8158,3 +8158,17 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+
+var word = "aventura";
+$("#video").hide();
+
+    
+ $("#submit").click(function(){
+       $("#nameOutput").html (" Nice Choice! "+$("#nameInput").val());
+ 
+ 
+ if($( "#nameInput" ).val() === word){
+    $("#video").show();
+ }
+ 
+    });
